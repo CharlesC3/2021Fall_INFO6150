@@ -1,0 +1,90 @@
+/* mobile sizing*/
+
+header{
+    font-size: small;
+}
+
+.info{
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.info__label{
+    background-color: white;
+    position: relative;
+    top: -27px;
+}
+
+.add-form{
+    margin: 1rem 0;
+}
+
+button{
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+label{
+    display: flex;
+}
+
+.add-form{
+    box-sizing: border-box;
+}
+
+input{
+    display: inline;
+    width: 100%;
+}
+
+
+
+
+
+/*Desktop changes*/
+@media (min-width: 600px){
+   .main-content{
+       display: flex;
+   }
+
+   header{
+       font-size: large;
+   }
+
+   .info{
+       border: 1px solid black;
+       padding: 1rem;
+   }
+   
+   .info__label{
+       background-color: white;
+       display: inline-block;
+       position: relative;
+       top: -27px;
+   }
+
+   button{
+       display: block;
+       margin-top: 1rem;
+       width: 100%;
+       height: auto;
+   }
+
+   input{
+       display: inline;
+   }
+
+   .add-form{
+       box-sizing: border-box;
+   }
+
+   .add-form{
+       padding: 1rem;;
+   }
+
+   
+
+
+}

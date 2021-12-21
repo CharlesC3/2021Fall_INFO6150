@@ -1,0 +1,124 @@
+.menubar{
+    background-color: #2E5797;
+}
+
+.menubar .menu{
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    justify-content: space-around;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menubar ul .dropdown{
+    display: inline-block;
+    padding: 1rem;
+    border: bottom 0;
+    background-color: #2E5797;
+    color:white;
+    font-size: 1rem;
+    border:none;
+}
+
+.menubar li:hover ,.menubar li:hover button, .dropdown:hover, .dropdown-content li:hover{
+    background-color: #0080F6;
+}
+
+.menubar a:focus li, #dropdown-l:focus-within,#dropdown-r:focus-within,#dropdown-r:focus-within button,.dropdown button:focus, #dropdown-content li:focus{
+    background-color: #0080F6;
+}
+
+.dropdown button{
+    background-color: #2E5797;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropmenu{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 3.3rem;
+}
+
+#left-dropmenu{
+    z-index: 999;
+}
+
+#right-dropdown{
+    z-index: 999;
+}
+
+.dropdown-content{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #2E5797;
+    z-index: 1;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+    
+    
+}
+
+
+.dropdown-content a{
+    color:white;
+    width: 10rem;
+    padding: 2rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropmenu{
+    display:block;
+}
+
+.dropmenu:focus .dropmenu{
+    display: block;
+}
+
+#dropdown-l:focus-within .dropmenu, #dropdown-r:focus-within .dropmenu{
+    display: block;
+}
+
+.sign-in{
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropdown a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 600px){
+    .menubar .menu{
+        display: flex;
+        margin-left: 3rem;
+    }
+
+    .sign-in{
+        margin-left: auto;
+        margin-right: 2rem;
+    }
+
+    #left-dropmenu{
+        left: 0;
+        width: 10rem;
+       
+    }
+
+    
+}

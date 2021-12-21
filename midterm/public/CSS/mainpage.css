@@ -1,0 +1,18 @@
+/*Intro Paragraphs*/
+main{
+    grid-area: main;
+    background-color: skyblue;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.intro-title{
+    font-size: large;
+    text-align: center;
+}
+
+.intro-pic{
+    width: 30%;
+    float: left;
+    padding: 1rem;
+}

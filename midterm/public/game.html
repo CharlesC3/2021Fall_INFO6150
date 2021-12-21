@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Home of Doraemon</title>
+    <meta name="viewport" content="width = device-width"/>
+    <link href="Pics/Doraemon.jpg" rel="icon" type="image"/>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+    <link rel="stylesheet" href="CSS/game.css"/>
+  </head>
+  <body>
+    <div id="homepage">
+      <div class="imgTitle">
+        <a href="Main.html"><img src="Pics/Logo.jpg"/></a>
+      </div>
+      <header>        
+        <nav class="menubar">
+          <ul class="menu">
+            <li class="dropdown">
+                <button type="button" class="dropbtn">My Gadgets</button>
+                <div class="dropmenu">
+                    <ul class="dropdown-content">
+                        <li><a href="#">Take-Copter</a></li>
+                        <li><a href="#">Time Machine</a></li>
+                        <li><a href="#">Anywhere Door</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button type="button" class="dropbtn">Friends of Doreamon</button>
+                <div class="dropmenu">
+                <ul class="dropdown-content">
+                    <li><a href="#">Nobita Nobi</a></li>
+                    <li><a href="#">Shizuka Minamoto</a></li>
+                    <li><a href="#">Dorami</a></li>
+                </ul>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button type="button" class="dropbtn">Other Famous Cats</button>
+                <div class="dropmenu">
+                <ul class="dropdown-content">
+                    <li><a href="#">Garfield</a></li>
+                    <li><a href="#">Tom</a></li>
+                    <li><a href="#">Hello Kitty</a></li>
+                </ul>
+                </div>
+          </ul>
+        </nav>
+      </header>
+      <nav class="local-menu">
+        <ul>
+          <li><a href="main.html">About Myself</a></li>
+          <li><a href="index.html">Start Adventure</a></li>
+          <li><a href="game.html">Little Game</a></li>
+          <li><a href="#">More Coming Soon...</Soon></a></li>
+        </ul>
+      </nav>
+      <main>
+        <div class="formarea">
+          <h1>Can you guess the password of Doraemon's Time Machine?</h1>
+          <p>Nobi forget the password of Doraemon's Time Machine again...But he's pretty sure it's a number between 1 and 99. Can you help him find the real password? You have ten chances. It'll tell you if your guess was too high or too low. Let's try.</p>
+          <div class="form">
+            <label for="guessField">Enter the password: </label>
+            <br>
+            <input type="text" id="guessField" class="guessField">
+            </br>
+            <input type="submit" value="Start the Engine" class="guessSubmit">
+          </div>
+          <div class="resultParas">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
+          </div>
+        </div>
+    </main>
+      <footer>
+        <p>All pictures' license are unknown. You can click the link to see where I found them.</p>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Doraemon#/media/File:Logo_Doraemon_new_version.jpg">character Logo</a></li>
+          <li><a href="https://deathbattlefanon.fandom.com/wiki/Doraemon?file=P1-doraemon-a-20140510.jpg">Intro-pic</a></li>
+          <li><a href="https://wallpapercave.com/w/wp2726553">Form-back</a></li>
+        </ul>
+      </footer>
+    </div>
+    <script src="JS/game.js"></script>
+  </body>
+</html>

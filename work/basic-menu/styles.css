@@ -1,0 +1,143 @@
+#homepage{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: auto auto 5fr auto;
+    grid-template-areas: "img h2"
+                        "header header" 
+                         "localmenu main" 
+                         "footer footer"
+}
+
+/*The img and the title*/
+img{
+    width: 30%;
+}
+
+.imgTitle{
+    display:flex;
+    
+}
+
+/*First unordered list*/
+header{
+    grid-area: header;
+    background-color: plum;
+}
+
+.menubar .menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+    margin:0;
+}
+
+.menubar ul button{
+    display: inline-block;
+    padding: 1rem;
+    border-bottom:0;
+}
+
+.menubar button:hover ,li:hover{
+    background-color: rebeccapurple;
+}
+
+.menubar li:hover button{
+    background-color: rebeccapurple;
+}
+
+button{
+    background-color: plum;
+    color:white;
+    padding:1 rem;
+    font-size: 1rem;
+    border:none;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropmenu{
+    display: none;
+    position: absolute;
+}
+
+
+.dropdown-content{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: plum;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+    
+}
+
+.dropdown-content a{
+    color:black;
+    width: 10rem;
+    padding: 2rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropmenu{
+    display:block;
+}
+
+.dropmenu{
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+@keyframes growDown {
+    0%{
+        transform: scaleY(0);
+    }
+    80%{
+        transform:scaleY(1.1);
+    }
+    100%{
+        transform:scaleY(1);
+    }
+}
+
+
+
+
+/*Second unordered list*/
+.local-menu{
+    grid-area: localmenu;
+    background-color: pink;
+    border-right: 1px solid black;
+}
+
+.local-menu ul li{
+    list-style-type: none;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/*Paragraphs*/
+main{
+    grid-area: main;
+    background-color: pink;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+H3{
+    text-align: center;
+}
+
+
+/*footer*/
+footer{
+    grid-area: footer;
+    background-color: plum;
+    padding: 1rem;
+}

@@ -1,0 +1,55 @@
+main{
+    background-color: skyblue;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 500px;
+}
+
+main h1{
+    font-size: large;
+    text-align: center;
+}
+
+main div {
+    margin: 0 auto;
+  }
+
+.lastResult {
+    color: white;
+    padding: 3px;
+  }
+
+  .guessSubmit{
+      display: block;
+      background-color: red;
+      height: 40px;
+      width: 90%;
+      border-radius: 25px;
+      margin: 0 auto;
+  }
+
+  .formarea>button{
+      background-color: springgreen;
+      height: 30px;
+  }
+
+  .guessField{
+      display: block;
+      height: 30px;
+      width: 90%;
+      text-align:center;
+      margin: 1rem auto;
+  }
+
+  @media (min-width: 600px){
+    main{
+        grid-area: main;
+    }
+
+  main div {
+    width: 50%;
+    max-width: 800px;
+    min-width: 480px;
+    margin: 0 auto;
+  }
+}

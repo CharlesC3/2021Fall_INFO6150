@@ -1,0 +1,79 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.5rem;
+    background-color: lightblue;
+    padding: 0.5rem;
+}
+
+.main__title{
+    grid-column: span 12;
+    text-align: center;
+}
+
+.card{
+    grid-column: span 4;
+    border: 2px solid blue;
+    background-color: white;
+    border-radius: 25px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}    
+
+.card__title{
+    text-align: center;
+}
+
+.card__more{
+    text-decoration:none;
+    background-color:yellowgreen;
+    display: block;
+    text-align: center;
+    width: 6rem;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    color: black;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+header{
+    display: flex;
+    background-color: skyblue;
+    padding-left: 0.5rem;
+}
+
+header h1{
+    padding-left: 0.5rem;
+}
+
+footer{
+    background-color: skyblue;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    padding-top: 20rem;
+}
+
+.footer__links{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0;
+    gap: 0.5rem;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
+
+.footer__item{
+    grid-column: span 4;
+    
+}
+
+
+

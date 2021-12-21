@@ -1,0 +1,105 @@
+footer{
+    background-color: #466996;
+    color: rgba(255, 255, 255, 0.75);
+    display: block;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+footer h4{
+    color: white;
+    font-weight: bolder;
+}
+
+footer .menus{
+    max-width: 1400px;
+    padding: 3rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3rem;
+    justify-content: space-around;
+}
+
+footer .menus> div{
+    width: 30%;
+    margin-right: 1rem;
+}
+
+footer a:focus{
+    opacity: 0.6;
+}
+
+footer a:hover{
+    opacity: 0.6;
+}
+
+footer a{
+    background-color: transparent;
+    color:rgba(255, 255, 255, 0.75);
+    transition: opacity 0.3s ease-in-out;
+}
+
+footer li{
+    list-style-type: none;
+    margin-top: 0.8rem;
+}
+
+footer ul{
+    padding-left: 0;
+}
+
+footer .menus img{
+    width: 45%;
+    margin-right: 0.5rem;
+}
+
+footer .legal-wrap{
+    background: rgba(0, 0, 0, 0.25);
+}
+
+footer .legal-wrap .legal{
+    max-width: 1400px;
+    margin: auto;
+    padding: 0.2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .legal ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+footer .social ul li{
+    margin-right: 1rem;
+}
+
+footer .terms{
+    padding-right: 2rem;
+}
+
+
+@media (max-width: 1000px){
+    footer .menus > div {
+        width: 40%;
+        margin-bottom: 2rem;
+        
+    }
+}
+
+@media (max-width: 700px){
+    footer .menus > div {
+        width: 100%;
+        margin-bottom: 2rem;
+        
+    }
+
+    footer .menus{
+        margin-left: 2rem;
+        padding-left: 1rem;
+        border: 0;
+    }
+
+}

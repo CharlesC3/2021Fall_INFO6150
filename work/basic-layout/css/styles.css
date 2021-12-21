@@ -1,0 +1,73 @@
+#homepage{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header header" 
+                         "localmenu main" 
+                         "footer footer"
+}
+
+
+/*First unordered list*/
+header{
+    grid-area: header;
+    background-color: plum;
+}
+
+.menubar ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+    margin:0;
+}
+
+.menubar ul li{
+    display: inline-block;
+    padding: 1rem;
+    border-bottom:0;
+}
+
+.menubar li:hover{
+    background-color: rebeccapurple;
+}
+
+.menubar li:hover a{
+    color: white;
+}
+
+
+/*Second unordered list*/
+.local-menu{
+    grid-area: localmenu;
+    background-color: pink;
+    border-right: 1px solid black;
+}
+
+.local-menu li:hover{
+    background-color: plum;
+}
+
+.local-menu ul li{
+    list-style-type: none;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+/*Paragraphs*/
+main{
+    grid-area: main;
+    background-color: pink;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+/*footer*/
+footer{
+    grid-area: footer;
+    background-color: plum;
+    padding: 1rem;
+}
+

@@ -1,0 +1,112 @@
+#homepage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 24% 1fr;
+    grid-template-rows: 87% 1fr;
+    grid-template-areas: "menubar main" 
+                         "footer main" 
+    }
+
+
+/*Menu*/
+.menubar{
+    grid-area: menubar;
+    background-color: #FFEE00;
+    padding: 1rem;
+}
+
+.menubar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menubar li{
+    border: solid #708090;
+    width: fit-content;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 25px;
+}
+
+.menubar li:hover{
+    background-color:#0375B4;
+}
+
+.menubar li:hover a{
+    color:white
+}
+
+.menubar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 0.7rem;
+    color: #708090;
+}
+
+
+/*form*/
+.main{
+    grid-area: main;
+    background-image: url(VanGogh1.png);
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.formarea{
+    background-color: white;
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+form{
+    padding: 1rem;
+}
+
+select:invalid, input:invalid{
+    box-shadow: 0 0 2px 2px #F78888;
+}
+
+.formarea label{
+    font-size: 4px;
+}
+
+.submit{
+    width:300px;
+    height:40px;
+    background-color: #0375B4;
+    border: 0;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;;
+}
+
+.name, .email{
+    width:290px;
+    height: 30px;
+    
+}
+
+.namebox, .emailbox{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/*footer*/
+footer{
+    grid-area: footer;
+    background-color: #262228;
+    padding: 1rem;
+    color:white;
+    font-size:small;
+}

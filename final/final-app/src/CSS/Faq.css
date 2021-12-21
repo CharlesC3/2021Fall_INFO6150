@@ -1,0 +1,16 @@
+.faqs h2{
+    text-align: center;
+    margin: 2rem;
+    font-size: 25px;
+}
+
+.faqs{
+    height: auto;
+    padding: 1rem 0 10rem;
+    background-image: url('../pics/background.jpeg');
+    background-attachment: fixed;
+}
+
+.faqs .accordion__title{
+    font-weight: 700;
+}
